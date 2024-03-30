@@ -19,8 +19,8 @@ private:
     {
         RCLCPP_INFO(this->get_logger(), "Recieved Orientation: ");
         RCLCPP_INFO(this->get_logger(), "Roll: %f", msg->orientation.x);
-        RCLCPP_INFO(this->get_logger(), "Pitch: %f", msg->orientation.z);
-        RCLCPP_INFO(this->get_logger(), "Bearing: %f", msg->orientation.x);
+        RCLCPP_INFO(this->get_logger(), "Pitch: %f", msg->orientation.y);
+        RCLCPP_INFO(this->get_logger(), "Bearing: %f", msg->orientation.z);
     }
 };
 
