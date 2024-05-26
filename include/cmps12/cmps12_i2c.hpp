@@ -9,7 +9,7 @@
 #include <linux/i2c-dev.h>
 #include <sys/ioctl.h>
 
-#define I2C_DEVICE "/dev/12c-1"
+#define I2C_DEVICE "/dev/12c-2"
 #define CMPS12_ADDRESS 0x60
 
 //Registers
