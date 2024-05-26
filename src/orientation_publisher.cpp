@@ -9,7 +9,7 @@ class OrientationPublisherNode : public rclcpp::Node
 public:
     OrientationPublisherNode() : Node("orientation_publisher_node")
     {
-        cmps12_file = cmps12_init("/dev/i2c-1");
+        cmps12_file = cmps12_init("/dev/i2c-2");
         if (cmps12_file < 0) {
             RCLCPP_ERROR(this->get_logger(), "Failed to initialize CMPS12 device");
             throw std::runtime_error("Failed to initialize CMPS12 device");
